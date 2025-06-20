@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Turf</title>
+    <style>
+        body { font-family: Arial; background-color: #f0f0f0; }
+        form {
+            max-width: 400px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<form action="add_turf.php" method="POST">
+    <h2>Add New Turf</h2>
+    <input type="text" name="turf_name" placeholder="Turf Name" required>
+    <input type="text" name="location" placeholder="Location" required>
+    <input type="number" name="price_per_hour" placeholder="Price per Hour" required>
+    <input type="text" name="image" placeholder="Image URL (optional)">
+    <button type="submit">Add Turf</button>
+</form>
+
+</body>
+</html>
